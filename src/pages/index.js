@@ -27,7 +27,7 @@ const IndexPage = ({
 
 export const query = graphql`
   query FerieDageQuery {
-    allContentfulFerieDage {
+    allContentfulFerieDage(sort: { fields: [createdAt] }) {
       edges {
         node {
           ferieNavn
