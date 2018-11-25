@@ -23,7 +23,7 @@ const AboutUs = ({
 
 export const query = graphql`
   query MedarbejdereQuery {
-    allContentfulMedarbejdere {
+    allContentfulMedarbejdere(sort: { fields: [createdAt] }) {
       edges {
         node {
           titelOgNavn
