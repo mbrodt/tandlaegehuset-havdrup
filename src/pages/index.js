@@ -10,7 +10,7 @@ const IndexPage = ({
   },
 }) => {
   console.log(edges)
-  const newest = edges[edges.length - 1]
+  const newest = edges[0]
   console.log('newest', newest)
   return (
     <Layout>
@@ -27,7 +27,7 @@ const IndexPage = ({
 
 export const query = graphql`
   query FerieDageQuery {
-    allContentfulFerieDage(sort: { fields: [createdAt] }) {
+    allContentfulFerieDage(sort: { fields: [createdAt], order: DESC }) {
       edges {
         node {
           ferieNavn
