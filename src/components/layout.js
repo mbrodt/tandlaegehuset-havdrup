@@ -18,7 +18,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="font-sans">
+      <div className="font-sans m-6">
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -29,17 +29,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          className="mx-auto container"
-          // style={{
-          //   margin: '0 auto',
-          //   maxWidth: 960,
-          //   padding: '0px 1.0875rem 1.45rem',
-          //   paddingTop: 0,
-          // }}
-        >
-          {children}
-        </div>
+        <div className="mx-auto container">{children}</div>
       </div>
     )}
   />
