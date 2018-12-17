@@ -2,4 +2,12 @@
 
 @tailwind components;
 
+.text-body {
+  @apply text-grey leading-normal;
+}
+
+.link {
+  @apply no-underline font-bold text-2xl text-black;
+}
+
 @tailwind utilities;

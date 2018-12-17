@@ -1,7 +1,9 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Dentist from '../components/dentist'
+import Section from '../components/section'
+import Sectionheading from '../components/sectionheading'
 
 const AboutUs = ({
   data: {
@@ -11,12 +13,12 @@ const AboutUs = ({
   console.log('edges', edges)
   return (
     <Layout>
-      <h1>Hey fra 'Vi er'!</h1>
-      <p>Welcome to page 2</p>
-      <Link to="/">Go back to the homepage</Link>
-      {edges.map(ele => {
-        return <Dentist info={ele.node} />
-      })}
+      <Section>
+        <Sectionheading>Hvem er vi?</Sectionheading>
+        {edges.map(ele => {
+          return <Dentist info={ele.node} />
+        })}
+      </Section>
     </Layout>
   )
 }

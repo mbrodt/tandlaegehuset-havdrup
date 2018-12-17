@@ -65,7 +65,7 @@ let colors = {
 
   'orange-darkest': '#462a16',
   'orange-darker': '#613b1f',
-  'orange-dark': '#de751f',
+  'orange-dark': '#B08841',
   orange: '#f6993f',
   'orange-light': '#faad63',
   'orange-lighter': '#fcd9b6',
@@ -97,7 +97,7 @@ let colors = {
 
   'blue-darkest': '#12283a',
   'blue-darker': '#1c3d5a',
-  'blue-dark': '#2779bd',
+  'blue-dark': '	#004789',
   blue: '#3490dc',
   'blue-light': '#6cb2eb',
   'blue-lighter': '#bcdefa',
@@ -772,6 +772,7 @@ module.exports = {
     '25': '.25',
     '50': '.5',
     '75': '.75',
+    '90': '.9',
     '100': '1',
   },
 

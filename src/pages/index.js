@@ -36,6 +36,7 @@ const IndexPage = ({ data }) => {
           className="w-full h-64"
           frameborder="0"
           allowfullscreen=""
+          title="Kort med markering af Tandlægehuset Havdrup"
         />
       </Section>
     </Layout>

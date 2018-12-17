@@ -1,11 +1,11 @@
 import React from 'react'
 import Logo from '../assets/logo.svg'
-import Hamburger from '../assets/hamburger.svg'
+import Hamburgermenu from '../components/hamburgermenu'
 
 const Header = () => (
   <div className="flex justify-between">
     <img src={Logo} alt={'logo'} />
-    <img src={Hamburger} alt={'logo'} />
+    <Hamburgermenu />
   </div>
 )
 
