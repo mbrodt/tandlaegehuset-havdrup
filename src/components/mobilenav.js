@@ -5,11 +5,11 @@ import Cross from '../assets/cross.svg'
 import './mobilenav.css'
 
 const MobileNav = props => {
-  return ReactDOM.createPortal(
+  return (
     <div
       id="mobile-nav"
       className={
-        'w-screen h-screen bg-orange-dark absolute pin-t flex items-center justify-center ' +
+        'w-screen h-screen bg-orange-dark absolute pin-l pin-t flex items-center justify-center ' +
         (props.isOpen ? '' : 'closed')
       }
     >
@@ -36,8 +36,7 @@ const MobileNav = props => {
           LINKS
         </Link>
       </ul>
-    </div>,
-    document.body
+    </div>
   )
 }
 
