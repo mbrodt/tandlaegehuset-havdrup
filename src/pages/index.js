@@ -34,8 +34,6 @@ const IndexPage = ({ data }) => {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2257.4528080840973!2d12.1142653!3d55.5418999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652f4412e547f63%3A0xd20acc8a2a10046a!2sTandl%C3%A6gehuset+I+Havdrup+I%2FS!5e0!3m2!1sda!2sdk!4v1456323785615"
           className="w-full h-64"
-          frameborder="0"
-          allowfullscreen=""
           title="Kort med markering af Tandlægehuset Havdrup"
         />
       </Section>

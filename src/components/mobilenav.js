@@ -2,10 +2,17 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Link } from 'gatsby'
 import Cross from '../assets/cross.svg'
+import './mobilenav.css'
 
 const MobileNav = props => {
   return ReactDOM.createPortal(
-    <div className="w-screen h-screen bg-orange-dark absolute pin-t flex items-center justify-center opacity-90">
+    <div
+      id="mobile-nav"
+      className={
+        'w-screen h-screen bg-orange-dark absolute pin-t flex items-center justify-center ' +
+        (props.isOpen ? '' : 'closed')
+      }
+    >
       <img
         className="absolute pin-t pin-r mt-10 mr-6"
         src={Cross}

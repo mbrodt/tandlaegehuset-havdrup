@@ -20,15 +20,7 @@ export class Hamburgermenu extends Component {
     return (
       <>
         <img onClick={() => this.handleToggle()} src={Hamburger} alt={'logo'} />
-        {this.state.isOpen ? <MobileNav toggle={this.handleToggle} /> : null}
-        {/* <img
-          onClick={() =>
-            (document.getElementById('myNav').style.width = '100%')
-          }
-          src={Hamburger}
-          alt={'logo'}
-        />
-        <NavMobile /> */}
+        <MobileNav isOpen={this.state.isOpen} toggle={this.handleToggle} />
       </>
     )
   }

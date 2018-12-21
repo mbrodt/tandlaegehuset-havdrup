@@ -1,0 +1,8 @@
+#mobile-nav {
+  /* background-color: blue; */
+  transition: transform 0.4s ease;
+}
+
+.closed {
+  transform: translateX(100%);
+}
