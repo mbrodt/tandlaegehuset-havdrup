@@ -1,8 +1,19 @@
-#mobile-nav {
-  /* background-color: blue; */
+/* #mobile-nav {
   transition: transform 0.4s ease;
 }
 
 .closed {
   transform: translateX(100%);
+} */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
 }

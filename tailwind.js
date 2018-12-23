@@ -64,9 +64,9 @@ let colors = {
   'red-lightest': '#fcebea',
 
   'orange-darkest': '#462a16',
-  'orange-darker': '#613b1f',
-  'orange-dark': '#B08841',
-  orange: '#f6993f',
+  'orange-darker': '#C4A060',
+  'orange-dark': '#F2994A',
+  orange: '#F2C94C',
   'orange-light': '#faad63',
   'orange-lighter': '#fcd9b6',
   'orange-lightest': '#fff5eb',
@@ -773,6 +773,7 @@ module.exports = {
     '50': '.5',
     '75': '.75',
     '90': '.9',
+    '95': '.95',
     '100': '1',
   },
 
@@ -903,6 +904,11 @@ module.exports = {
     require('tailwindcss/plugins/container')({
       // center: true,
       // padding: '1rem',
+    }),
+    require('tailwindcss-plugins/gradients')({
+      gradients: {
+        topaz: ['30deg', colors['orange'], colors['orange-dark']],
+      },
     }),
   ],
 
