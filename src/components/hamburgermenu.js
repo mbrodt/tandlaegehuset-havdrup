@@ -28,7 +28,9 @@ export class Hamburgermenu extends Component {
   render() {
     return (
       <>
-        <img onClick={() => this.openNav()} src={Hamburger} alt={'logo'} />
+        <div className="flex px-4">
+          <img onClick={() => this.openNav()} src={Hamburger} alt={'logo'} />
+        </div>
         <MobileNav isOpen={this.state.isOpen} toggle={this.closeNav} />
       </>
     )

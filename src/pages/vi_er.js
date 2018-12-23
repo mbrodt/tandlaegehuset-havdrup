@@ -16,7 +16,7 @@ const AboutUs = ({
       <Section>
         <Sectionheading>Hvem er vi?</Sectionheading>
         {edges.map(ele => {
-          return <Dentist info={ele.node} />
+          return <Dentist info={ele.node} key={ele.node.titelOgNavn} />
         })}
       </Section>
     </Layout>

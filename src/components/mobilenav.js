@@ -13,7 +13,7 @@ const MobileNav = props => {
       // }
     >
       <img
-        className="absolute pin-t pin-r mt-10 mr-6"
+        className="absolute pin-t pin-r mt-10 mr-6 px-4"
         src={Cross}
         onClick={props.toggle}
         alt="Close button"
