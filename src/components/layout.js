@@ -29,8 +29,8 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="mx-auto p-6 sm:w-4/5 md:w-3/5 lg:w-full flex-grow">
+        <div className="mx-auto p-6 sm:w-4/5 xl:w-3/5 flex-grow">
+          <Header siteTitle={data.site.siteMetadata.title} />
           {children}
         </div>
         <Footer className="" />
