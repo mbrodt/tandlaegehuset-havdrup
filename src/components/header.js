@@ -2,7 +2,6 @@ import React from 'react'
 import Logo from '../assets/logo.svg'
 import Hamburgermenu from '../components/hamburgermenu'
 import Navigation from '../components/navigation'
-import tw from '../../tailwind'
 import { isLargeScreen } from '../helpers'
 
 export default class Header extends React.Component {
@@ -10,8 +9,8 @@ export default class Header extends React.Component {
     isLarge: false,
   }
   componentDidMount() {
+    // because "window" does not exist when server-side rendering, the isLarge state has to be set on mount to avoid webpack error at buildtime
     let isLarge = isLargeScreen()
-    console.log('isLarge', isLarge)
     this.setState({
       isLarge,
     })

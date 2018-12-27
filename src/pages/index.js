@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import Huset from '../assets/huset.png'
 import Family from '../assets/family.svg'
 import Sectionheading from '../components/sectionheading'
 import Consultation from '../components/consultation'
@@ -14,14 +13,6 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <div className="lg:flex lg:mb-20">
-        {/* <div className="mb-12 lg:w-1/3">
-          <Sectionheading>Lene Marquardsen & Sabine Lauge Olsen</Sectionheading>
-          <img
-            className="mx-auto block"
-            src={Huset}
-            alt="Tandlægehuset i Havdrup"
-          />
-        </div> */}
         <div className="mb-12 mx-auto">
           <Sectionheading>Konsultation efter aftale</Sectionheading>
           <Consultation vacationData={vacation} />
@@ -39,9 +30,6 @@ const IndexPage = ({ data }) => {
       <div>
         <div className="mb-12">
           <Sectionheading>Find os</Sectionheading>
-          {/* <div className="lg:w-1/3">
-            <img src={Map} alt="" />
-          </div> */}
           <div className="">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2257.4528080840973!2d12.1142653!3d55.5418999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652f4412e547f63%3A0xd20acc8a2a10046a!2sTandl%C3%A6gehuset+I+Havdrup+I%2FS!5e0!3m2!1sda!2sdk!4v1456323785615"

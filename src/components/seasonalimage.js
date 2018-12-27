@@ -11,6 +11,7 @@ export default class SeasonalImage extends React.Component {
     season: '',
   }
   componentDidMount() {
+    // because "window" does not exist when server-side rendering, the isLarge state has to be set on mount to avoid webpack error at buildtime
     let month = new Date().getMonth()
     let season = getSeason(month)
 
