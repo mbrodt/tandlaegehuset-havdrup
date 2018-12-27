@@ -10,7 +10,6 @@ const AboutUs = ({
     allContentfulMedarbejdere: { edges },
   },
 }) => {
-  console.log('edges', edges)
   return (
     <Layout>
       <Section>

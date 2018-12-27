@@ -4,8 +4,6 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Huset from '../assets/huset.png'
 import Family from '../assets/family.svg'
-import Map from '../assets/map.svg'
-import Section from '../components/section'
 import Sectionheading from '../components/sectionheading'
 import Consultation from '../components/consultation'
 
@@ -15,21 +13,21 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <div className="lg:flex lg:mb-24">
-        <div className="mb-12 lg:w-1/3">
+      <div className="lg:flex lg:mb-20">
+        {/* <div className="mb-12 lg:w-1/3">
           <Sectionheading>Lene Marquardsen & Sabine Lauge Olsen</Sectionheading>
           <img
             className="mx-auto block"
             src={Huset}
             alt="Tandlægehuset i Havdrup"
           />
-        </div>
-        <div className="mb-12 lg:w-2/3">
+        </div> */}
+        <div className="mb-12 mx-auto">
           <Sectionheading>Konsultation efter aftale</Sectionheading>
           <Consultation vacationData={vacation} />
         </div>
       </div>
-      <div className="lg:flex mb-12 lg:mb-24 lg:items-center">
+      <div className="lg:flex mb-12 lg:mb-20 lg:items-center">
         <div className="mb-12 lg:w-2/3 lg:pr-24">
           <Sectionheading>{news.titel}</Sectionheading>
           <p className="text-grey leading-normal">{news.bodycopy.bodycopy}</p>

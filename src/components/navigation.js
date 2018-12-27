@@ -6,7 +6,7 @@ const Navigation = () => {
     <ul className="list-reset ">
       <li className="my-2 no-underline">
         <Link
-          activeClassName="text-orange-darker"
+          activeClassName="text-brown"
           className="no-underline text-blue"
           to="/"
         >
@@ -15,7 +15,7 @@ const Navigation = () => {
       </li>
       <li className="my-2 no-underline">
         <Link
-          activeClassName="text-orange-darker"
+          activeClassName="text-brown"
           className="no-underline text-blue"
           to="/vi_er"
         >
@@ -32,7 +32,7 @@ const Navigation = () => {
       </li>
       <li className="my-2 ">
         <Link
-          activeClassName="text-orange-darker"
+          activeClassName="text-brown"
           className="no-underline text-blue"
           to="/links"
         >

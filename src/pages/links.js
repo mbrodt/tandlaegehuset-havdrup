@@ -9,7 +9,7 @@ const Links = () => {
       <Section>
         <Sectionheading>Links</Sectionheading>
         <div className="w-4/5 mx-auto flex flex-col">
-          <p>
+          <p className="my-4">
             Her kan du finde links til andre sider der kan være relevante for
             dig.
           </p>

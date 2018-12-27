@@ -3,28 +3,24 @@ import Logo from '../assets/logo.svg'
 import Hamburgermenu from '../components/hamburgermenu'
 import Navigation from '../components/navigation'
 import tw from '../../tailwind'
-
-console.log('config', tw)
+import { isLargeScreen } from '../helpers'
 
 export default class Header extends React.Component {
   state = {
-    width: 0,
+    isLarge: false,
   }
   componentDidMount() {
+    let isLarge = isLargeScreen()
+    console.log('isLarge', isLarge)
     this.setState({
-      width: document.body.clientWidth,
+      isLarge,
     })
   }
   render() {
-    console.log('width', this.state.width)
     return (
       <div className="flex justify-between m-6">
         <img src={Logo} alt={'logo'} />
-        {this.state.width > parseInt(tw.screens.md, 10) ? (
-          <Navigation />
-        ) : (
-          <Hamburgermenu />
-        )}
+        {this.state.isLarge ? <Navigation /> : <Hamburgermenu />}
       </div>
     )
   }

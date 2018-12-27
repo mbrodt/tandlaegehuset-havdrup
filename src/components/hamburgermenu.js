@@ -13,13 +13,11 @@ export class Hamburgermenu extends Component {
     this.closeNav = this.closeNav.bind(this)
   }
   handleToggle() {
-    console.log('toggle')
     this.setState(prevState => ({
       isOpen: !prevState.isOpen,
     }))
   }
   openNav() {
-    console.log('opening')
     document.getElementById('mySidenav').style.width = '100%'
   }
   closeNav() {

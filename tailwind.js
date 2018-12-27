@@ -60,10 +60,13 @@ let colors = {
   'blue-dark': '	#004789',
   blue: '#3490dc',
 
-  'orange-darkest': '#462a16',
-  'orange-darker': '#C4A060',
-  'orange-dark': '#F2994A',
-  orange: '#F2C94C',
+  'brown-darkest': '#695634',
+  'brown-darker': '#896F41',
+  'brown-dark': '#AA8C56',
+  brown: '#C4A060',
+  'brown-light': '#DEB670',
+  'brown-lighter': '#EDC172',
+  'brown-lightest': '#FFE9C2',
 }
 
 module.exports = {
@@ -846,7 +849,7 @@ module.exports = {
     }),
     require('tailwindcss-plugins/gradients')({
       gradients: {
-        topaz: ['30deg', colors['orange'], colors['orange-dark']],
+        topaz: ['30deg', colors['brown'], colors['brown-darker']],
       },
     }),
   ],

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import SeasonalImage from '../components/seasonalimage'
 
 import Header from './header'
 import Footer from './footer'
@@ -29,7 +30,9 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <div className="mx-auto p-6 sm:w-4/5 xl:w-3/5 flex-grow">
+
+        <div className="mx-auto px-6 pb-6 sm:w-4/5 xl:w-3/5 flex-grow">
+          <SeasonalImage />
           <Header siteTitle={data.site.siteMetadata.title} />
           {children}
         </div>
