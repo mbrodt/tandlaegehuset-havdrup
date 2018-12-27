@@ -16,9 +16,13 @@ const Consultation = ({ vacationData }) => {
         />
       </div>
       <div className="mb-8">
+        <p className="text-body mb-4">
+          Vi tjekker naturligvis vores mail dagligt, men har du behov for en
+          akut tid eller lignende, beder vi dig benytte telefonen i stedet.{' '}
+        </p>
         <div className="flex items-center mb-4">
-          <p className="text-grey mr-4">Telefontid alle hverdage</p>
-          <p className="text-grey font-bold ">07:30-12:15</p>
+          <p className="text-body mr-4">Telefontid alle hverdage:</p>
+          <p className="text-body font-bold ">07:30-12:15</p>
         </div>
         <div className="flex items-center">
           <img className="w-6 mr-4" src={Phone} alt="" />
