@@ -49,6 +49,7 @@ export const query = graphql`
       edges {
         node {
           ferieNavn
+          removeInfoDate
         }
       }
     }

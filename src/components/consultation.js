@@ -4,7 +4,7 @@ import Huset from '../assets/huset.png'
 
 const Consultation = ({ vacationData }) => {
   return (
-    <div className="bg-grey-lightest rounded-lg shadow-lg p-4 sm:p-8  max-w-sm mx-auto">
+    <div className="bg-grey-lightest rounded-lg shadow-lg p-4 sm:p-8 max-w-sm mx-auto">
       <div className="flex items-center mb-6 sm:mb-8">
         <img
           className="mx-auto block w-24 rounded-full"
@@ -15,7 +15,7 @@ const Consultation = ({ vacationData }) => {
           Lene Marquardsen & Sabine Lauge Olsen
         </p>
       </div>
-      <div className="mb-8">
+      <div>
         <p className="text-body mb-8">
           Vi tjekker naturligvis vores mail dagligt, men har du behov for en
           akut tid eller lignende, beder vi dig benytte telefonen i stedet.{' '}
@@ -38,14 +38,29 @@ const Consultation = ({ vacationData }) => {
           </div>
         </div>
       </div>
-      <div
-        className="bg-brown-lightest border-l-4 border-brown text-brown-darkest p-4 rounded-r-lg mb-4"
-        role="alert"
-      >
-        <p>{vacationData.ferieNavn}</p>
-      </div>
+      <VacationInfo vacationData={vacationData} />
     </div>
   )
+}
+
+const VacationInfo = ({ vacationData: { ferieNavn, removeInfoDate } }) => {
+  const displayInfo = displayVacationInfo(removeInfoDate)
+  return displayInfo ? (
+    <div
+      className="bg-brown-lightest border-l-4 border-brown text-brown-darkest p-4 rounded-r-lg mb-4 mt-8"
+      role="alert"
+    >
+      <p>{ferieNavn}</p>
+    </div>
+  ) : null
+}
+
+const displayVacationInfo = removeDate => {
+  // always display the vacation info if the removal date is not set
+  if (removeDate === null) return true
+  const dateToRemove = new Date(removeDate)
+  const today = new Date()
+  return dateToRemove > today
 }
 
 export default Consultation

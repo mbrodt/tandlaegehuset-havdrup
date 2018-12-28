@@ -3,7 +3,7 @@ import SampleImage from '../assets/Sample_Profile.jpg'
 
 const Dentist = ({ info }) => {
   return (
-    <div className="mb-12 flex flex-col sm:flex-row mx-auto">
+    <div className="mb-12 flex flex-col sm:flex-row mx-auto items-center">
       <div className="mb-4 mx-auto sm:mr-4 lg:mr-0">
         <img
           className="block rounded-full"
