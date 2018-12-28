@@ -4,33 +4,42 @@ import Huset from '../assets/huset.png'
 
 const Consultation = ({ vacationData }) => {
   return (
-    <div className="bg-grey-lightest rounded-lg shadow-lg p-4 sm:p-8 md:w-2/3 mx-auto">
-      <div className="flex items-center mb-8">
-        <p className="w-2/3 text-grey text-xl mr-4">
-          Lene Marquardsen & Sabine Lauge Olsen
-        </p>
+    <div className="bg-grey-lightest rounded-lg shadow-lg p-4 sm:p-8  max-w-sm mx-auto">
+      <div className="flex items-center mb-6 sm:mb-8">
         <img
-          className="mx-auto block w-1/3 rounded-lg"
+          className="mx-auto block w-24 rounded-full"
           src={Huset}
           alt="Tandlægehuset i Havdrup"
         />
+        <p className="w-2/3 text-grey text-md sm:text-lg md:text-xl font-bold text-left ml-6 sm:ml-0 sm:text-center">
+          Lene Marquardsen & Sabine Lauge Olsen
+        </p>
       </div>
       <div className="mb-8">
-        <p className="text-body mb-4">
+        <p className="text-body mb-8">
           Vi tjekker naturligvis vores mail dagligt, men har du behov for en
           akut tid eller lignende, beder vi dig benytte telefonen i stedet.{' '}
         </p>
-        <div className="flex items-center mb-4">
-          <p className="text-body mr-4">Telefontid alle hverdage:</p>
-          <p className="text-body font-bold ">07:30-12:15</p>
-        </div>
-        <div className="flex items-center">
-          <img className="w-6 mr-4" src={Phone} alt="" />
-          <p className="text-grey font-bold ">46 18 55 80</p>
+        <div className="flex justify-between">
+          <div>
+            <p className="uppercase text-sm text-body tracking-wide mb-2">
+              ring til os
+            </p>
+            <div className="flex items-center">
+              <img className="w-5 mr-4 hidden sm:block" src={Phone} alt="" />
+              <p className="text-body font-bold text-xl ">46 18 55 80</p>
+            </div>
+          </div>
+          <div className="">
+            <p className="uppercase text-sm text-body tracking-wide mb-2 ">
+              Alle hverdage
+            </p>
+            <p className="text-body font-bold text-xl ">07:30-12:15</p>
+          </div>
         </div>
       </div>
       <div
-        className="bg-brown-lightest border-l-4 border-brown text-brown-darker p-4 mt-4 rounded-lg"
+        className="bg-brown-lightest border-l-4 border-brown text-brown-darkest p-4 rounded-r-lg mb-4"
         role="alert"
       >
         <p>{vacationData.ferieNavn}</p>

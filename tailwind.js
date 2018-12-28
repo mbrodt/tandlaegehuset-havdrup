@@ -55,7 +55,7 @@ let colors = {
   'grey-lightest': '#F6F6F6',
   white: '#ffffff',
 
-  red: '#e3342f',
+  footer: '#2f1000',
 
   'blue-dark': '	#004789',
   blue: '#3490dc',
@@ -517,6 +517,7 @@ module.exports = {
   */
 
   maxWidth: {
+    '2xs': '10rem',
     xs: '20rem',
     sm: '30rem',
     md: '40rem',

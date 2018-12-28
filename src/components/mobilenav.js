@@ -12,28 +12,40 @@ const MobileNav = props => {
       //   (props.isOpen ? '' : ' closed')
       // }
     >
-      <img
-        className="absolute pin-t pin-r mt-10 mr-6 px-4"
-        src={Cross}
-        onClick={props.toggle}
-        alt="Close button"
-      />
-      <ul className="flex flex-col list-reset h-48 w-4/5 justify-between items-center">
-        <Link className="nav-link" to="/">
-          FORSIDE
-        </Link>
-        <Link className="nav-link" to="/vi_er">
-          HVEM ER VI
-        </Link>
-        <a
-          className="nav-link"
-          href="https://www.sundhed.dk/borger/guides/find-behandler/?orgId=29892"
-        >
-          PRISER
-        </a>
-        <Link className="nav-link" to="/links">
-          LINKS
-        </Link>
+      <button onClick={props.toggle}>
+        <img
+          className="absolute pin-t pin-r mt-10 mr-6 px-4"
+          src={Cross}
+          alt="Close button"
+        />
+      </button>
+      <ul
+        className="flex flex-col list-reset h-48 w-4/5 justify-between items-center"
+        aria-hidden="true"
+      >
+        <li>
+          <Link className="nav-link" to="/">
+            FORSIDE
+          </Link>
+        </li>
+        <li>
+          <Link className="nav-link" to="/vi_er">
+            HVEM ER VI
+          </Link>
+        </li>
+        <li>
+          <a
+            className="nav-link"
+            href="https://www.sundhed.dk/borger/guides/find-behandler/?orgId=29892"
+          >
+            PRISER
+          </a>
+        </li>
+        <li>
+          <Link className="nav-link" to="/links">
+            LINKS
+          </Link>
+        </li>
       </ul>
     </div>
   )
