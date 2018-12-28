@@ -5,18 +5,18 @@ import MobileNav from './mobilenav'
 export class Hamburgermenu extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      isOpen: false,
-    }
-    this.handleToggle = this.handleToggle.bind(this)
+    // this.state = {
+    //   isOpen: false,
+    // }
+    // this.handleToggle = this.handleToggle.bind(this)
     this.openNav = this.openNav.bind(this)
     this.closeNav = this.closeNav.bind(this)
   }
-  handleToggle() {
-    this.setState(prevState => ({
-      isOpen: !prevState.isOpen,
-    }))
-  }
+  // handleToggle() {
+  //   this.setState(prevState => ({
+  //     isOpen: !prevState.isOpen,
+  //   }))
+  // }
   openNav() {
     document.getElementById('mySidenav').style.width = '100%'
   }
@@ -26,12 +26,12 @@ export class Hamburgermenu extends Component {
   render() {
     return (
       <>
-        <div className="flex px-4">
+        <div className="flex px-4 block md:hidden">
           <button onClick={() => this.openNav()}>
             <img src={Hamburger} alt={'logo'} />
           </button>
         </div>
-        <MobileNav isOpen={this.state.isOpen} toggle={this.closeNav} />
+        <MobileNav toggle={this.closeNav} />
       </>
     )
   }

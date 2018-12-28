@@ -8,9 +8,6 @@ const MobileNav = props => {
     <div
       id="mySidenav"
       className="sidenav bg-topaz flex items-center justify-center opacity-95"
-      // className="w-screen h-screen bg-topaz absolute pin-l pin-t flex items-center justify-center opacity-95"
-      //   (props.isOpen ? '' : ' closed')
-      // }
     >
       <button onClick={props.toggle}>
         <img

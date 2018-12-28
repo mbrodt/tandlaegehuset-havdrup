@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 const Navigation = () => {
   return (
-    <ul className="list-reset ">
+    <ul className="list-reset hidden md:block">
       <li className="my-2 no-underline">
         <Link
           activeClassName="text-brown"
