@@ -22,9 +22,7 @@ export default class SeasonalImage extends React.Component {
         src={require(`../assets/${this.state.season}.jpg`)}
         alt=""
       />
-    ) : (
-      <h1>LOL</h1>
-    )
+    ) : null
   }
 }
 
