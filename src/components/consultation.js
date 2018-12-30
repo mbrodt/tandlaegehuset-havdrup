@@ -4,7 +4,7 @@ import Huset from '../assets/huset.png'
 
 const Consultation = ({ vacationData }) => {
   return (
-    <div className="bg-grey-lightest rounded-lg shadow-lg p-4 sm:p-8 max-w-sm mx-auto">
+    <div className="bg-white rounded-lg shadow-lg p-4 sm:p-8 max-w-sm mx-auto">
       <div className="flex items-center mb-6 sm:mb-8">
         <img
           className="mx-auto block w-24 rounded-full"

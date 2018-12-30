@@ -20,7 +20,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="font-sans flex flex-col relative min-h-screen">
+      <div className="font-sans flex flex-col relative min-h-screen bg-grey-lightest">
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
