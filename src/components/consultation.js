@@ -18,7 +18,7 @@ const Consultation = ({ vacationData }) => {
       <div>
         <p className="text-body mb-8">
           Vi tjekker naturligvis vores mail dagligt, men har du behov for en
-          akut tid eller lignende, beder vi dig benytte telefonen i stedet.{' '}
+          akut tid eller lignende, beder vi dig benytte telefonen.{' '}
         </p>
         <div className="flex justify-between">
           <div>
