@@ -7,7 +7,7 @@
 }
 
 .nav-link {
-  @apply no-underline font-bold text-2xl text-black;
+  @apply no-underline font-bold text-2xl text-footer;
 }
 
 @tailwind utilities;

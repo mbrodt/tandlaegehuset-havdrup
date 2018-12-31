@@ -7,7 +7,7 @@ import SeasonalImage from '../components/seasonalimage'
 export default class Header extends React.Component {
   render() {
     return (
-      <div>
+      <div className="mb-4 sm:mb-8 md:mb-12">
         <div className="flex justify-between mb-2 mt-4 md:pb-0 border-b-2 pb-2">
           <img className="md:w-48 md:h-24" src={Logo} alt={'logo'} />
           <Navigation />
