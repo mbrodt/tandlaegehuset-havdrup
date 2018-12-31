@@ -34,7 +34,7 @@ const Navigation = () => {
             Priser
           </a>
         </li>
-        <li className="m-2 ">
+        <li className="m-2 mr-0">
           <Link
             activeClassName="text-brown"
             className="no-underline text-blue text-xl"
