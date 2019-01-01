@@ -497,6 +497,7 @@ module.exports = {
 
   minHeight: {
     '0': '0',
+    '40': '10rem',
     full: '100%',
     screen: '100vh',
   },

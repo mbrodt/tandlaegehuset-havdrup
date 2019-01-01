@@ -6,7 +6,7 @@ const Dentist = ({ info }) => {
     <div className="mb-12 flex flex-col md:flex-row mx-auto items-center bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-8 max-w-lg">
       {/* <div className=""> */}
       <img
-        className="block rounded-full mb-4 md:mb-0 md:mr-8"
+        className="block rounded-full mb-4 md:mb-0 md:mr-8 min-h-40"
         src={info.billede ? info.billede.file.url : SampleImage}
         alt={info.titelOgNavn}
       />

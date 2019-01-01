@@ -9,12 +9,11 @@ const MobileNav = props => {
       id="mySidenav"
       className="sidenav bg-brown-lightest flex items-center justify-center opacity-95"
     >
-      <button onClick={props.toggle}>
-        <img
-          className="absolute pin-t pin-r mt-10 mr-6 px-4"
-          src={Cross}
-          alt="Close button"
-        />
+      <button
+        className="absolute pin-t pin-r mt-10 mr-6 px-4"
+        onClick={props.toggle}
+      >
+        <img src={Cross} alt="Close button" />
       </button>
       <ul
         className="flex flex-col list-reset h-48 w-4/5 justify-between items-center"
