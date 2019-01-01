@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <div className="lg:flex lg:mb-20">
+      <div className="lg:mb-20">
         <div className="mb-12 sm:mb-0 mx-auto">
           <Sectionheading>Konsultation efter aftale</Sectionheading>
           <Consultation vacationData={vacation} />
