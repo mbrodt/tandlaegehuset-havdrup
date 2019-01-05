@@ -33,8 +33,15 @@ module.exports = {
         icon: 'src/assets/favicon.svg', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'seasons',
+        path: `${__dirname}/src/assets/seasons`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
   ],
 }

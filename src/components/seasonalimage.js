@@ -1,29 +1,27 @@
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
-export default class SeasonalImage extends React.Component {
-  // if isMounted is true by default, the image can not be found
-  state = {
-    isMounted: false,
-    season: '',
-  }
-  componentDidMount() {
-    let month = new Date().getMonth()
-    let season = getSeason(month)
+const SeasonalImage = () => (
+  <StaticQuery query={SEASONAL_IMAGES_QUERY}>
+    {({ allFile: { edges } }) => {
+      const seasonlImage = getSeasonalImage(edges)
+      return <Img fluid={seasonlImage.node.childImageSharp.fluid} />
+    }}
+  </StaticQuery>
+)
 
-    this.setState({
-      isMounted: true,
-      season,
-    })
-  }
-  render() {
-    return this.state.isMounted ? (
-      <img
-        className="w-full h-16 hidden md:block"
-        src={require(`../assets/${this.state.season}.jpg`)}
-        alt=""
-      />
-    ) : null
-  }
+export default SeasonalImage
+
+// helpers
+const getSeasonalImage = images => {
+  const month = new Date().getMonth()
+  const img = images.filter(image => {
+    const seasonName = getSeason(month)
+    return image.node.relativePath === `${seasonName}.jpg`
+  })
+  const [seasonalImage] = img
+  return seasonalImage
 }
 
 const getSeason = month => {
@@ -41,3 +39,20 @@ const getSeason = month => {
 
   return 'winter'
 }
+
+const SEASONAL_IMAGES_QUERY = graphql`
+  query SeasonalImagesQuery {
+    allFile(filter: { sourceInstanceName: { eq: "seasons" } }) {
+      edges {
+        node {
+          relativePath
+          childImageSharp {
+            fluid(maxWidth: 1600) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
