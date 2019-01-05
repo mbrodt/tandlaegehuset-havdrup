@@ -19,7 +19,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="font-sans flex flex-col relative min-h-screen bg-grey-lightest">
+      <div className="font-sans flex flex-col relative min-h-screen bg-background">
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -30,7 +30,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
 
-        <div className="mx-auto px-6 pb-6 sm:w-4/5 xl:w-3/5 flex-grow">
+        <div className="mx-auto px-6 sm:w-4/5 xxl:w-3/5 flex-grow">
           <Header siteTitle={data.site.siteMetadata.title} />
           {children}
         </div>

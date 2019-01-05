@@ -56,6 +56,7 @@ let colors = {
   white: '#ffffff',
 
   footer: '#733636',
+  background: '#fff8f2',
 
   'blue-dark': '	#004789',
   blue: '#3490dc',
@@ -109,6 +110,7 @@ module.exports = {
     md: '768px',
     lg: '992px',
     xl: '1200px',
+    xxl: '1600px',
   },
 
   /*

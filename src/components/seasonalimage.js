@@ -6,7 +6,12 @@ const SeasonalImage = () => (
   <StaticQuery query={SEASONAL_IMAGES_QUERY}>
     {({ allFile: { edges } }) => {
       const seasonlImage = getSeasonalImage(edges)
-      return <Img fluid={seasonlImage.node.childImageSharp.fluid} />
+      return (
+        <Img
+          className="hidden md:block"
+          fluid={seasonlImage.node.childImageSharp.fluid}
+        />
+      )
     }}
   </StaticQuery>
 )

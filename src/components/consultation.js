@@ -4,14 +4,15 @@ import Huset from '../assets/huset.png'
 
 const Consultation = ({ vacationData }) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg p-4 sm:p-8 max-w-sm mx-auto mb-8">
-      <div className="flex items-center mb-6 sm:mb-8">
+    <div className="bg-white rounded-lg shadow-lg p-4 sm:p-8 max-w-sm mx-auto mb-12 xl:mb-0">
+      <div className="flex flex-col sm:flex-row-reverse items-center mb-6 ">
         <img
-          className="mx-auto block w-24 rounded-full"
+          className="mx-auto block w-24 rounded-full mb-6 sm:mb-0"
           src={Huset}
           alt="Tandlægehuset i Havdrup"
         />
-        <p className="w-2/3 text-grey text-md sm:text-lg md:text-xl font-bold text-left ml-6 sm:ml-0 sm:text-center">
+        <p className="sm:w-2/3 text-grey text-md sm:text-lg md:text-xl font-bold text-left ml-0">
+          {/* sm:text-center */}
           Lene Marquardsen & Sabine Lauge Olsen
         </p>
       </div>
