@@ -10,6 +10,7 @@ const AboutUs = ({
     allContentfulMedarbejdere: { edges },
   },
 }) => {
+  console.log(edges)
   return (
     <Layout>
       <Section>
@@ -29,8 +30,8 @@ export const query = graphql`
         node {
           titelOgNavn
           billede {
-            file {
-              url
+            fixed(width: 160, height: 160) {
+              ...GatsbyContentfulFixed
             }
           }
           beskrivelse {
