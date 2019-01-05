@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import Family from '../assets/family.svg'
-import Contact from '../assets/modified_contact.svg'
 import Sectionheading from '../components/sectionheading'
 import Section from '../components/section'
 import Consultation from '../components/consultation'
@@ -19,10 +18,6 @@ const IndexPage = ({ data }) => {
         <div className="flex flex-col xl:flex-row items-center">
           <Consultation vacationData={vacation} />
           <News newsData={news} />
-
-          {/* <div className="lg:w-1/2 max-w-xs mx-auto">
-              <img className="" src={Contact} alt="" />
-            </div> */}
         </div>
       </Section>
 
