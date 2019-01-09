@@ -7,8 +7,8 @@ import Sectionheading from '../components/sectionheading'
 
 const AboutUs = ({
   data: {
-    allContentfulMedarbejdere: { edges },
-  },
+    allContentfulMedarbejdere: { edges }
+  }
 }) => {
   console.log(edges)
   return (
@@ -30,7 +30,7 @@ export const query = graphql`
         node {
           titelOgNavn
           billede {
-            fixed(width: 160, height: 160) {
+            fixed(width: 160, height: 160, quality: 90) {
               ...GatsbyContentfulFixed
             }
           }

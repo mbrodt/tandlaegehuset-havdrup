@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import Family from '../assets/family.svg'
+// import Family from '../assets/family.svg'
 import Sectionheading from '../components/sectionheading'
 import Section from '../components/section'
 import Consultation from '../components/consultation'
