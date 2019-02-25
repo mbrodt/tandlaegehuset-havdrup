@@ -2,7 +2,8 @@ import React from 'react'
 import Phone from '../assets/phone.svg'
 import Huset from '../assets/huset.png'
 
-const Consultation = ({ vacationData }) => {
+const Consultation = ({ vacations }) => {
+  console.log('vacations', vacations)
   return (
     <div className="bg-white rounded-lg shadow-lg p-4 sm:p-8 max-w-sm mx-auto mb-12 xl:mb-0">
       <div className="flex flex-col sm:flex-row-reverse items-center mb-6 ">
@@ -39,13 +40,17 @@ const Consultation = ({ vacationData }) => {
           </div>
         </div>
       </div>
-      <VacationInfo vacationData={vacationData} />
+      {vacations.map(vacation => (
+        <VacationInfo vacation={vacation.node} key={vacation.node.ferieNavn} />
+      ))}
     </div>
   )
 }
 
-const VacationInfo = ({ vacationData: { ferieNavn, removeInfoDate } }) => {
-  const displayInfo = displayVacationInfo(removeInfoDate)
+const VacationInfo = ({
+  vacation: { ferieNavn, addInfoDate, removeInfoDate }
+}) => {
+  const displayInfo = displayVacationInfo(addInfoDate, removeInfoDate)
   return displayInfo ? (
     <div
       className="bg-brown-lightest border-l-4 border-brown text-brown-darkest p-4 rounded-r-lg mb-4 mt-8"
@@ -56,12 +61,14 @@ const VacationInfo = ({ vacationData: { ferieNavn, removeInfoDate } }) => {
   ) : null
 }
 
-const displayVacationInfo = removeDate => {
-  // always display the vacation info if the removal date is not set
-  if (removeDate === null) return true
+const displayVacationInfo = (addDate, removeDate) => {
+  // always display the vacation info if the remove or add date is not set
+  if (removeDate === null || addDate === null) return true
   const dateToRemove = new Date(removeDate)
+  const dateToAdd = new Date(addDate)
   const today = new Date()
-  return dateToRemove > today
+  const isActive = dateToAdd < today && today < dateToRemove
+  return isActive
 }
 
 export default Consultation

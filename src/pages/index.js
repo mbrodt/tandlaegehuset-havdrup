@@ -9,14 +9,14 @@ import Consultation from '../components/consultation'
 import News from '../components/news'
 
 const IndexPage = ({ data }) => {
-  let vacation = data.allContentfulFerieDage.edges[0].node
+  let vacations = data.allContentfulFerieDage.edges
   let news = data.allContentfulNyhed.edges[0].node
 
   return (
     <Layout>
       <Section>
         <div className="flex flex-col xl:flex-row items-center">
-          <Consultation vacationData={vacation} />
+          <Consultation vacations={vacations} />
           <News newsData={news} />
         </div>
       </Section>
@@ -59,6 +59,7 @@ export const query = graphql`
         node {
           ferieNavn
           removeInfoDate
+          addInfoDate
         }
       }
     }
