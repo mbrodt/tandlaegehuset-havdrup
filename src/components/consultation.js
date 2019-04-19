@@ -1,6 +1,6 @@
 import React from 'react'
 import Phone from '../assets/phone.svg'
-import Huset from '../assets/huset.png'
+import Huset from '../assets/house_small.png'
 
 const Consultation = ({ vacations }) => {
   console.log('vacations', vacations)
