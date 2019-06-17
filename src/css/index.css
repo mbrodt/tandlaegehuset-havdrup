@@ -2,16 +2,4 @@
 
 @tailwind components;
 
-.text-body {
-  @apply text-grey leading-normal;
-}
-
-.mobile-nav-link {
-  @apply no-underline font-bold text-2xl text-footer;
-}
-
-.nav-link {
-  transition: all 0.2s ease-in-out;
-}
-
 @tailwind utilities;

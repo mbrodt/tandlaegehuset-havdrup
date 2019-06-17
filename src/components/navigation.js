@@ -36,38 +36,10 @@ const Navigation = () => {
       <ul className="list-reset hidden md:flex items-end ">
         <NavItem text="Forside" to="/" />
         <NavItem text="Hvem er vi" to="/vi_er" />
-        <NavItem text="Links" to="/links" />
         <NavItem
           text="Priser"
           external="https://www.sundhed.dk/borger/guides/find-behandler/?orgId=29892"
         />
-
-        {/* <li className="m-2 no-underline">
-          <Link
-            activeClassName="text-brown"
-            className="no-underline text-blue text-xl hover:text-blue-dark"
-            to="/vi_er"
-          >
-            Hvem er vi
-          </Link>
-        </li>
-        <li className="m-2 no-underline">
-          <a
-            className="no-underline text-blue text-xl hover:text-blue-dark"
-            href="https://www.sundhed.dk/borger/guides/find-behandler/?orgId=29892"
-          >
-            Priser
-          </a>
-        </li>
-        <li className="m-2 mr-0">
-          <Link
-            activeClassName="text-brown"
-            className="no-underline text-blue text-xl hover:text-blue-dark"
-            to="/links"
-          >
-            Links
-          </Link>
-        </li> */}
       </ul>
     </>
   )
