@@ -6,6 +6,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import Footer from './footer'
 import '../css/generated.css'
+import '../css/custom.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -31,7 +32,6 @@ const Layout = ({ children }) => (
         </Helmet>
 
         <div className="mx-auto px-6 sm:w-4/5 xxl:w-3/5 flex-grow">
-          <Header siteTitle={data.site.siteMetadata.title} />
           {children}
         </div>
         <Footer className="" />

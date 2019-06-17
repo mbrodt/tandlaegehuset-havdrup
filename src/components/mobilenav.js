@@ -20,23 +20,21 @@ const MobileNav = props => {
         aria-hidden="true"
       >
         <li>
-          <Link className="mobile-nav-link" to="/">
+          <Link className="no-underline font-bold text-2xl text-footer" to="/">
             FORSIDE
           </Link>
         </li>
         <li>
-          <Link className="mobile-nav-link" to="/vi_er">
+          <Link
+            className="no-underline font-bold text-2xl text-footer"
+            to="/vi_er"
+          >
             HVEM ER VI
           </Link>
         </li>
         <li>
-          <Link className="mobile-nav-link" to="/links">
-            LINKS
-          </Link>
-        </li>
-        <li>
           <a
-            className="mobile-nav-link"
+            className="no-underline font-bold text-2xl text-footer"
             href="https://www.sundhed.dk/borger/guides/find-behandler/?orgId=29892"
           >
             PRISER

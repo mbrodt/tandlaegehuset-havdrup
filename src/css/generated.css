@@ -475,6 +475,12 @@ textarea::-webkit-input-placeholder {
   opacity: .5;
 }
 
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: inherit;
+  opacity: .5;
+}
+
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: inherit;
@@ -534,22 +540,6 @@ table {
   .container {
     max-width: 1600px;
   }
-}
-
-.text-body {
-  color: #706e69;
-  line-height: 1.5;
-}
-
-.mobile-nav-link {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #733636;
-}
-
-.nav-link {
-  transition: all .2s ease-in-out;
 }
 
 .list-reset {
@@ -1491,6 +1481,30 @@ table {
   cursor: not-allowed;
 }
 
+.hover\:cursor-auto:hover {
+  cursor: auto;
+}
+
+.hover\:cursor-default:hover {
+  cursor: default;
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hover\:cursor-wait:hover {
+  cursor: wait;
+}
+
+.hover\:cursor-move:hover {
+  cursor: move;
+}
+
+.hover\:cursor-not-allowed:hover {
+  cursor: not-allowed;
+}
+
 .block {
   display: block;
 }
@@ -1845,6 +1859,10 @@ table {
   height: 4rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-24 {
   height: 6rem;
 }
@@ -1859,6 +1877,10 @@ table {
 
 .h-64 {
   height: 16rem;
+}
+
+.h-80 {
+  height: 20rem;
 }
 
 .h-auto {
@@ -3952,6 +3974,14 @@ table {
   font-size: 3rem;
 }
 
+.text-6xl {
+  font-size: 4rem;
+}
+
+.text-7xl {
+  font-size: 5rem;
+}
+
 .italic {
   font-style: italic;
 }
@@ -4226,8 +4256,16 @@ table {
   width: 6rem;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .w-32 {
   width: 8rem;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .w-48 {
@@ -5266,6 +5304,30 @@ table {
     cursor: not-allowed;
   }
 
+  .sm\:hover\:cursor-auto:hover {
+    cursor: auto;
+  }
+
+  .sm\:hover\:cursor-default:hover {
+    cursor: default;
+  }
+
+  .sm\:hover\:cursor-pointer:hover {
+    cursor: pointer;
+  }
+
+  .sm\:hover\:cursor-wait:hover {
+    cursor: wait;
+  }
+
+  .sm\:hover\:cursor-move:hover {
+    cursor: move;
+  }
+
+  .sm\:hover\:cursor-not-allowed:hover {
+    cursor: not-allowed;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -5620,6 +5682,10 @@ table {
     height: 4rem;
   }
 
+  .sm\:h-20 {
+    height: 5rem;
+  }
+
   .sm\:h-24 {
     height: 6rem;
   }
@@ -5634,6 +5700,10 @@ table {
 
   .sm\:h-64 {
     height: 16rem;
+  }
+
+  .sm\:h-80 {
+    height: 20rem;
   }
 
   .sm\:h-auto {
@@ -6822,7 +6892,7 @@ table {
     padding: 1px;
   }
 
-  .p-0\.sm\:5 {
+  .sm\:p-0\.5 {
     padding: .375rem;
   }
 
@@ -6976,12 +7046,12 @@ table {
     padding-right: 1px;
   }
 
-  .py-0\.sm\:5 {
+  .sm\:py-0\.5 {
     padding-top: .375rem;
     padding-bottom: .375rem;
   }
 
-  .px-0\.sm\:5 {
+  .sm\:px-0\.5 {
     padding-left: .375rem;
     padding-right: .375rem;
   }
@@ -7226,19 +7296,19 @@ table {
     padding-left: 1px;
   }
 
-  .pt-0\.sm\:5 {
+  .sm\:pt-0\.5 {
     padding-top: .375rem;
   }
 
-  .pr-0\.sm\:5 {
+  .sm\:pr-0\.5 {
     padding-right: .375rem;
   }
 
-  .pb-0\.sm\:5 {
+  .sm\:pb-0\.5 {
     padding-bottom: .375rem;
   }
 
-  .pl-0\.sm\:5 {
+  .sm\:pl-0\.5 {
     padding-left: .375rem;
   }
 
@@ -7711,6 +7781,14 @@ table {
     font-size: 3rem;
   }
 
+  .sm\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .sm\:text-7xl {
+    font-size: 5rem;
+  }
+
   .sm\:italic {
     font-style: italic;
   }
@@ -7985,8 +8063,16 @@ table {
     width: 6rem;
   }
 
+  .sm\:w-28 {
+    width: 7rem;
+  }
+
   .sm\:w-32 {
     width: 8rem;
+  }
+
+  .sm\:w-40 {
+    width: 10rem;
   }
 
   .sm\:w-48 {
@@ -9022,6 +9108,30 @@ table {
     cursor: not-allowed;
   }
 
+  .md\:hover\:cursor-auto:hover {
+    cursor: auto;
+  }
+
+  .md\:hover\:cursor-default:hover {
+    cursor: default;
+  }
+
+  .md\:hover\:cursor-pointer:hover {
+    cursor: pointer;
+  }
+
+  .md\:hover\:cursor-wait:hover {
+    cursor: wait;
+  }
+
+  .md\:hover\:cursor-move:hover {
+    cursor: move;
+  }
+
+  .md\:hover\:cursor-not-allowed:hover {
+    cursor: not-allowed;
+  }
+
   .md\:block {
     display: block;
   }
@@ -9376,6 +9486,10 @@ table {
     height: 4rem;
   }
 
+  .md\:h-20 {
+    height: 5rem;
+  }
+
   .md\:h-24 {
     height: 6rem;
   }
@@ -9390,6 +9504,10 @@ table {
 
   .md\:h-64 {
     height: 16rem;
+  }
+
+  .md\:h-80 {
+    height: 20rem;
   }
 
   .md\:h-auto {
@@ -10578,7 +10696,7 @@ table {
     padding: 1px;
   }
 
-  .p-0\.md\:5 {
+  .md\:p-0\.5 {
     padding: .375rem;
   }
 
@@ -10732,12 +10850,12 @@ table {
     padding-right: 1px;
   }
 
-  .py-0\.md\:5 {
+  .md\:py-0\.5 {
     padding-top: .375rem;
     padding-bottom: .375rem;
   }
 
-  .px-0\.md\:5 {
+  .md\:px-0\.5 {
     padding-left: .375rem;
     padding-right: .375rem;
   }
@@ -10982,19 +11100,19 @@ table {
     padding-left: 1px;
   }
 
-  .pt-0\.md\:5 {
+  .md\:pt-0\.5 {
     padding-top: .375rem;
   }
 
-  .pr-0\.md\:5 {
+  .md\:pr-0\.5 {
     padding-right: .375rem;
   }
 
-  .pb-0\.md\:5 {
+  .md\:pb-0\.5 {
     padding-bottom: .375rem;
   }
 
-  .pl-0\.md\:5 {
+  .md\:pl-0\.5 {
     padding-left: .375rem;
   }
 
@@ -11467,6 +11585,14 @@ table {
     font-size: 3rem;
   }
 
+  .md\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 5rem;
+  }
+
   .md\:italic {
     font-style: italic;
   }
@@ -11741,8 +11867,16 @@ table {
     width: 6rem;
   }
 
+  .md\:w-28 {
+    width: 7rem;
+  }
+
   .md\:w-32 {
     width: 8rem;
+  }
+
+  .md\:w-40 {
+    width: 10rem;
   }
 
   .md\:w-48 {
@@ -12778,6 +12912,30 @@ table {
     cursor: not-allowed;
   }
 
+  .lg\:hover\:cursor-auto:hover {
+    cursor: auto;
+  }
+
+  .lg\:hover\:cursor-default:hover {
+    cursor: default;
+  }
+
+  .lg\:hover\:cursor-pointer:hover {
+    cursor: pointer;
+  }
+
+  .lg\:hover\:cursor-wait:hover {
+    cursor: wait;
+  }
+
+  .lg\:hover\:cursor-move:hover {
+    cursor: move;
+  }
+
+  .lg\:hover\:cursor-not-allowed:hover {
+    cursor: not-allowed;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -13132,6 +13290,10 @@ table {
     height: 4rem;
   }
 
+  .lg\:h-20 {
+    height: 5rem;
+  }
+
   .lg\:h-24 {
     height: 6rem;
   }
@@ -13146,6 +13308,10 @@ table {
 
   .lg\:h-64 {
     height: 16rem;
+  }
+
+  .lg\:h-80 {
+    height: 20rem;
   }
 
   .lg\:h-auto {
@@ -14334,7 +14500,7 @@ table {
     padding: 1px;
   }
 
-  .p-0\.lg\:5 {
+  .lg\:p-0\.5 {
     padding: .375rem;
   }
 
@@ -14488,12 +14654,12 @@ table {
     padding-right: 1px;
   }
 
-  .py-0\.lg\:5 {
+  .lg\:py-0\.5 {
     padding-top: .375rem;
     padding-bottom: .375rem;
   }
 
-  .px-0\.lg\:5 {
+  .lg\:px-0\.5 {
     padding-left: .375rem;
     padding-right: .375rem;
   }
@@ -14738,19 +14904,19 @@ table {
     padding-left: 1px;
   }
 
-  .pt-0\.lg\:5 {
+  .lg\:pt-0\.5 {
     padding-top: .375rem;
   }
 
-  .pr-0\.lg\:5 {
+  .lg\:pr-0\.5 {
     padding-right: .375rem;
   }
 
-  .pb-0\.lg\:5 {
+  .lg\:pb-0\.5 {
     padding-bottom: .375rem;
   }
 
-  .pl-0\.lg\:5 {
+  .lg\:pl-0\.5 {
     padding-left: .375rem;
   }
 
@@ -15223,6 +15389,14 @@ table {
     font-size: 3rem;
   }
 
+  .lg\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .lg\:text-7xl {
+    font-size: 5rem;
+  }
+
   .lg\:italic {
     font-style: italic;
   }
@@ -15497,8 +15671,16 @@ table {
     width: 6rem;
   }
 
+  .lg\:w-28 {
+    width: 7rem;
+  }
+
   .lg\:w-32 {
     width: 8rem;
+  }
+
+  .lg\:w-40 {
+    width: 10rem;
   }
 
   .lg\:w-48 {
@@ -16534,6 +16716,30 @@ table {
     cursor: not-allowed;
   }
 
+  .xl\:hover\:cursor-auto:hover {
+    cursor: auto;
+  }
+
+  .xl\:hover\:cursor-default:hover {
+    cursor: default;
+  }
+
+  .xl\:hover\:cursor-pointer:hover {
+    cursor: pointer;
+  }
+
+  .xl\:hover\:cursor-wait:hover {
+    cursor: wait;
+  }
+
+  .xl\:hover\:cursor-move:hover {
+    cursor: move;
+  }
+
+  .xl\:hover\:cursor-not-allowed:hover {
+    cursor: not-allowed;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -16888,6 +17094,10 @@ table {
     height: 4rem;
   }
 
+  .xl\:h-20 {
+    height: 5rem;
+  }
+
   .xl\:h-24 {
     height: 6rem;
   }
@@ -16902,6 +17112,10 @@ table {
 
   .xl\:h-64 {
     height: 16rem;
+  }
+
+  .xl\:h-80 {
+    height: 20rem;
   }
 
   .xl\:h-auto {
@@ -18090,7 +18304,7 @@ table {
     padding: 1px;
   }
 
-  .p-0\.xl\:5 {
+  .xl\:p-0\.5 {
     padding: .375rem;
   }
 
@@ -18244,12 +18458,12 @@ table {
     padding-right: 1px;
   }
 
-  .py-0\.xl\:5 {
+  .xl\:py-0\.5 {
     padding-top: .375rem;
     padding-bottom: .375rem;
   }
 
-  .px-0\.xl\:5 {
+  .xl\:px-0\.5 {
     padding-left: .375rem;
     padding-right: .375rem;
   }
@@ -18494,19 +18708,19 @@ table {
     padding-left: 1px;
   }
 
-  .pt-0\.xl\:5 {
+  .xl\:pt-0\.5 {
     padding-top: .375rem;
   }
 
-  .pr-0\.xl\:5 {
+  .xl\:pr-0\.5 {
     padding-right: .375rem;
   }
 
-  .pb-0\.xl\:5 {
+  .xl\:pb-0\.5 {
     padding-bottom: .375rem;
   }
 
-  .pl-0\.xl\:5 {
+  .xl\:pl-0\.5 {
     padding-left: .375rem;
   }
 
@@ -18979,6 +19193,14 @@ table {
     font-size: 3rem;
   }
 
+  .xl\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .xl\:text-7xl {
+    font-size: 5rem;
+  }
+
   .xl\:italic {
     font-style: italic;
   }
@@ -19253,8 +19475,16 @@ table {
     width: 6rem;
   }
 
+  .xl\:w-28 {
+    width: 7rem;
+  }
+
   .xl\:w-32 {
     width: 8rem;
+  }
+
+  .xl\:w-40 {
+    width: 10rem;
   }
 
   .xl\:w-48 {
@@ -20290,6 +20520,30 @@ table {
     cursor: not-allowed;
   }
 
+  .xxl\:hover\:cursor-auto:hover {
+    cursor: auto;
+  }
+
+  .xxl\:hover\:cursor-default:hover {
+    cursor: default;
+  }
+
+  .xxl\:hover\:cursor-pointer:hover {
+    cursor: pointer;
+  }
+
+  .xxl\:hover\:cursor-wait:hover {
+    cursor: wait;
+  }
+
+  .xxl\:hover\:cursor-move:hover {
+    cursor: move;
+  }
+
+  .xxl\:hover\:cursor-not-allowed:hover {
+    cursor: not-allowed;
+  }
+
   .xxl\:block {
     display: block;
   }
@@ -20644,6 +20898,10 @@ table {
     height: 4rem;
   }
 
+  .xxl\:h-20 {
+    height: 5rem;
+  }
+
   .xxl\:h-24 {
     height: 6rem;
   }
@@ -20658,6 +20916,10 @@ table {
 
   .xxl\:h-64 {
     height: 16rem;
+  }
+
+  .xxl\:h-80 {
+    height: 20rem;
   }
 
   .xxl\:h-auto {
@@ -21846,7 +22108,7 @@ table {
     padding: 1px;
   }
 
-  .p-0\.xxl\:5 {
+  .xxl\:p-0\.5 {
     padding: .375rem;
   }
 
@@ -22000,12 +22262,12 @@ table {
     padding-right: 1px;
   }
 
-  .py-0\.xxl\:5 {
+  .xxl\:py-0\.5 {
     padding-top: .375rem;
     padding-bottom: .375rem;
   }
 
-  .px-0\.xxl\:5 {
+  .xxl\:px-0\.5 {
     padding-left: .375rem;
     padding-right: .375rem;
   }
@@ -22250,19 +22512,19 @@ table {
     padding-left: 1px;
   }
 
-  .pt-0\.xxl\:5 {
+  .xxl\:pt-0\.5 {
     padding-top: .375rem;
   }
 
-  .pr-0\.xxl\:5 {
+  .xxl\:pr-0\.5 {
     padding-right: .375rem;
   }
 
-  .pb-0\.xxl\:5 {
+  .xxl\:pb-0\.5 {
     padding-bottom: .375rem;
   }
 
-  .pl-0\.xxl\:5 {
+  .xxl\:pl-0\.5 {
     padding-left: .375rem;
   }
 
@@ -22735,6 +22997,14 @@ table {
     font-size: 3rem;
   }
 
+  .xxl\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .xxl\:text-7xl {
+    font-size: 5rem;
+  }
+
   .xxl\:italic {
     font-style: italic;
   }
@@ -23009,8 +23279,16 @@ table {
     width: 6rem;
   }
 
+  .xxl\:w-28 {
+    width: 7rem;
+  }
+
   .xxl\:w-32 {
     width: 8rem;
+  }
+
+  .xxl\:w-40 {
+    width: 10rem;
   }
 
   .xxl\:w-48 {
