@@ -17,7 +17,6 @@ const IndexPage = ({ data }) => {
   let vacations = data.allContentfulFerieDage.edges
   let news = data.allContentfulNyhed.edges[0].node
   let galleryImages = data.allContentfulBilleder.edges[0].node.galleryImages
-
   return (
     <>
       <Hero />

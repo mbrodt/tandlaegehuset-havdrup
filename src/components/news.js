@@ -3,7 +3,7 @@ import Sectionheading from './sectionheading'
 
 const news = ({ newsData }) => {
   return (
-    <div data-aos="fade-up">
+    <div data-aos="fade-up" className="self-center">
       <Sectionheading>{newsData.titel}</Sectionheading>
       <p className="text-grey leading-normal">{newsData.bodycopy.bodycopy}</p>
     </div>
