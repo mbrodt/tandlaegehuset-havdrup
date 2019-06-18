@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Hero = () => {
   return (
-    <div className="hero w-screen h-80 md:h-screen flex justify-center items-center">
+    <div className="relative hero w-screen h-80 md:h-screen flex justify-center items-center">
       <div className="">
         <h1
           className="text-2xl text-center text-white sm:text-3xl md:text-5xl xl:text-6xl xxl:text-7xl mb-12"
@@ -18,21 +19,46 @@ const Hero = () => {
           >
             Se hvem vi er
           </Link>
-          <a
+          <AnchorLink
+            offset="80"
             href="#contact"
             className="shadow-lg text-center no-underline w-full md:w-2/5 border-4 border-brown py-2 py-2 md:py-3 lg:py-4 md:py-3 lg:px-8 lg:px-8 md:text-xl lg:text-2xl  text-white hover:cursor-pointer hover:bg-brown text-md mt-2 md:mt-0"
           >
             Kontakt os
-          </a>
+          </AnchorLink>
         </div>
       </div>
+      <ScrollIndicator />
     </div>
-    // <img
-    //   classNameName="w-screen h-screen object-cover"
-    //   src="https://scontent-amt2-1.xx.fbcdn.net/v/t1.15752-9/s2048x2048/64672607_875055336184154_2616655820896600064_n.jpg?_nc_cat=101&_nc_oc=AQlM-WRItymZx3nVLTDOd8tAxkDAxuZWdBxu29vFqI3m-BktOZzSUOWozde43z31Jmc&_nc_ht=scontent-amt2-1.xx&oh=64641d26975253825f837633c2e83d1c&oe=5D854BEE"
-    //   alt=""
-    // />
   )
 }
+
+const ScrollIndicator = () => (
+  <AnchorLink
+    href="#contact"
+    offset="80"
+    style={{ position: 'absolute', bottom: '15%' }}
+    className="scroll-indicator text-white text-3xl mt-24 opacity-90"
+  >
+    <svg
+      className="w-24 h-24"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="12" cy="12" r="7.5" stroke="white" />
+      <path
+        d="M9.35355 8.64645C9.15829 8.45118 8.84171 8.45118 8.64645 8.64645C8.45118 8.84171 8.45118 9.15829 8.64645 9.35355L9.35355 8.64645ZM12 12L11.6464 12.3536L12 12.7071L12.3536 12.3536L12 12ZM15.3536 9.35355C15.5488 9.15829 15.5488 8.84171 15.3536 8.64645C15.1583 8.45118 14.8417 8.45118 14.6464 8.64645L15.3536 9.35355ZM12.3536 12.3536L13.8536 10.8536L13.1464 10.1464L11.6464 11.6464L12.3536 12.3536ZM13.8536 10.8536L15.3536 9.35355L14.6464 8.64645L13.1464 10.1464L13.8536 10.8536ZM8.64645 9.35355L10.1464 10.8536L10.8536 10.1464L9.35355 8.64645L8.64645 9.35355ZM10.1464 10.8536L11.6464 12.3536L12.3536 11.6464L10.8536 10.1464L10.1464 10.8536Z"
+        fill="white"
+      />
+      <path
+        d="M9.35355 11.6464C9.15829 11.4512 8.84171 11.4512 8.64645 11.6464C8.45118 11.8417 8.45118 12.1583 8.64645 12.3536L9.35355 11.6464ZM12 15L11.6464 15.3536L12 15.7071L12.3536 15.3536L12 15ZM15.3536 12.3536C15.5488 12.1583 15.5488 11.8417 15.3536 11.6464C15.1583 11.4512 14.8417 11.4512 14.6464 11.6464L15.3536 12.3536ZM12.3536 15.3536L13.8536 13.8536L13.1464 13.1464L11.6464 14.6464L12.3536 15.3536ZM13.8536 13.8536L15.3536 12.3536L14.6464 11.6464L13.1464 13.1464L13.8536 13.8536ZM8.64645 12.3536L10.1464 13.8536L10.8536 13.1464L9.35355 11.6464L8.64645 12.3536ZM10.1464 13.8536L11.6464 15.3536L12.3536 14.6464L10.8536 13.1464L10.1464 13.8536Z"
+        fill="white"
+      />
+    </svg>
+  </AnchorLink>
+)
 
 export default Hero

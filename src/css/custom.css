@@ -10,12 +10,28 @@
   background-repeat: no-repeat;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+.scroll-indicator {
+  animation: bounce 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5rem;
   justify-items: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 @media only screen and (max-width: 992px) {
