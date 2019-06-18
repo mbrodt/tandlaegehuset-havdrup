@@ -37,13 +37,11 @@ const ScrollIndicator = () => (
   <AnchorLink
     href="#contact"
     offset="80"
-    style={{ position: 'absolute', bottom: '15%' }}
-    className="scroll-indicator text-white text-3xl mt-24 opacity-90"
+    style={{ position: 'absolute', bottom: '2%' }}
+    className="scroll-indicator text-white text-3xl opacity-75"
   >
     <svg
-      className="w-24 h-24"
-      width="24"
-      height="24"
+      style={{ width: '10vw', height: '8vh' }}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

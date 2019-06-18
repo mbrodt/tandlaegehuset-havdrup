@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => {
       <Hero />
       <Layout>
         <div className="">
-          <div id="contact" className="gallery-grid mt-20">
+          <div id="contact" className="gallery-grid mt-12 lg:mt-20">
             <Consultation vacations={vacations} />
             <News newsData={news} />
             {galleryImages.map(img => (

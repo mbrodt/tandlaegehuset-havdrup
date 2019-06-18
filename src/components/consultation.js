@@ -7,7 +7,7 @@ const Consultation = ({ vacations }) => {
   return (
     <div
       data-aos="fade-up"
-      className="bg-white rounded-lg shadow-lg p-4 sm:p-8  mx-auto mb-12 xl:mb-0"
+      className="bg-white rounded-lg shadow-lg p-4 sm:p-8  mx-auto xl:mb-0"
     >
       <div className="flex justify-between items-center mb-6 ">
         <p className="sm:w-2/3 text-grey text-md sm:text-lg md:text-xl font-bold text-left ml-0">
