@@ -7,8 +7,15 @@ const Links = () => {
       <Sectionheading>Links</Sectionheading>
 
       <p className="my-4 text-body">
-        Her kan du finde links til andre sider der kan være relevante for dig.
+        Her kan du finde links til andre sider der kan være relevante for dig,
+        samt vores priser.
       </p>
+      <a
+        className="text-blue my-4"
+        href="https://www.sundhed.dk/borger/guides/find-behandler/?orgId=29892"
+      >
+        Priser
+      </a>
       <a className="text-blue my-4" href="https://www.tandlaegeforeningen.dk/">
         Tandlægeforeningen
       </a>
