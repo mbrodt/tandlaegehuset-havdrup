@@ -44,7 +44,7 @@ const Hero = () => {
     // </div>
     <BackgroundImage
       // className="relative w-screen h-80 md:h-screen flex justify-center items-center"
-      className="w-screen h-80 flex justify-center items-center hero"
+      className="h-80 flex justify-center items-center hero"
       fluid={data.file.childImageSharp.fluid}
     >
       <div className="">
