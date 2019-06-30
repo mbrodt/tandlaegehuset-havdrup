@@ -8,7 +8,7 @@ const { spaceId, accessToken } = process.env
 
 module.exports = {
   siteMetadata: {
-    title: 'Tandlægehuset Havdrup',
+    title: 'Tandlægehuset Havdrup'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -16,8 +16,8 @@ module.exports = {
       resolve: 'gatsby-source-contentful',
       options: {
         spaceId,
-        accessToken,
-      },
+        accessToken
+      }
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -30,18 +30,18 @@ module.exports = {
         background_color: '#C4A060',
         theme_color: '#C4A060',
         display: 'minimal-ui',
-        icon: 'src/assets/favicon.svg', // This path is relative to the root of the site.
-      },
+        icon: 'src/assets/favicon.svg' // This path is relative to the root of the site.
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'seasons',
-        path: `${__dirname}/src/assets/seasons`,
-      },
+        path: `${__dirname}/src/assets`
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    'gatsby-plugin-offline',
-  ],
+    'gatsby-plugin-offline'
+  ]
 }

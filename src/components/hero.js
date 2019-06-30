@@ -1,10 +1,52 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import BackgroundImage from 'gatsby-background-image'
 
 const Hero = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "husethero.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 4160) {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+    }
+  `)
   return (
-    <div className="relative hero w-screen h-80 md:h-screen flex justify-center items-center">
+    // <div className="relative hero w-screen h-80 md:h-screen flex justify-center items-center">
+    //   <div className="">
+    //     <h1
+    //       className="text-2xl text-center text-white sm:text-3xl md:text-5xl xl:text-6xl xxl:text-7xl mb-12"
+    //       style={{ textShadow: '1px 1px black' }}
+    //     >
+    //       Tandlægehuset i Havdrup
+    //     </h1>
+    //     <div className="flex flex-col md:flex-row justify-around max-w-md mx-auto">
+    //       <Link
+    //         to="/vi_er"
+    //         className="shadow-lg text-center no-underline w-full md:w-2/5 border-4 border-transparent bg-brown py-2 md:py-3 lg:py-4 md:py-3 lg:px-8 md:text-xl lg:text-2xl text-white hover:bg-brown-dark text-md"
+    //       >
+    //         Se hvem vi er
+    //       </Link>
+    //       <AnchorLink
+    //         offset="80"
+    //         href="#contact"
+    //         className="shadow-lg text-center no-underline w-full md:w-2/5 border-4 border-brown py-2 py-2 md:py-3 lg:py-4 md:py-3 lg:px-8 lg:px-8 md:text-xl lg:text-2xl  text-white hover:cursor-pointer hover:bg-brown text-md mt-2 md:mt-0"
+    //       >
+    //         Kontakt os
+    //       </AnchorLink>
+    //     </div>
+    //   </div>
+    //   <ScrollIndicator />
+    // </div>
+    <BackgroundImage
+      // className="relative w-screen h-80 md:h-screen flex justify-center items-center"
+      className="w-screen h-80 flex justify-center items-center hero"
+      fluid={data.file.childImageSharp.fluid}
+    >
       <div className="">
         <h1
           className="text-2xl text-center text-white sm:text-3xl md:text-5xl xl:text-6xl xxl:text-7xl mb-12"
@@ -15,21 +57,21 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row justify-around max-w-md mx-auto">
           <Link
             to="/vi_er"
-            className="shadow-lg text-center no-underline w-full md:w-2/5 border-4 border-transparent bg-brown py-2 md:py-3 lg:py-4 md:py-3 lg:px-8 md:text-xl lg:text-2xl text-white hover:bg-brown-dark text-md"
+            className="shadow-lg text-center no-underline w-full md:w-2/5 border-4 border-transparent bg-brown py-1 sm:py-2 md:py-3 lg:py-4 md:py-3 lg:px-8 md:text-xl lg:text-2xl text-white hover:bg-brown-dark text-md"
           >
             Se hvem vi er
           </Link>
           <AnchorLink
             offset="80"
             href="#contact"
-            className="shadow-lg text-center no-underline w-full md:w-2/5 border-4 border-brown py-2 py-2 md:py-3 lg:py-4 md:py-3 lg:px-8 lg:px-8 md:text-xl lg:text-2xl  text-white hover:cursor-pointer hover:bg-brown text-md mt-2 md:mt-0"
+            className="shadow-lg text-center no-underline w-full md:w-2/5 border-4 border-brown py-1 sm:py-2 md:py-3 lg:py-4 md:py-3 lg:px-8 lg:px-8 md:text-xl lg:text-2xl  text-white hover:cursor-pointer hover:bg-brown text-md mt-2 md:mt-0"
           >
             Kontakt os
           </AnchorLink>
         </div>
       </div>
       <ScrollIndicator />
-    </div>
+    </BackgroundImage>
   )
 }
 
@@ -37,7 +79,12 @@ const ScrollIndicator = () => (
   <AnchorLink
     href="#contact"
     offset="80"
-    style={{ position: 'absolute', bottom: '2%' }}
+    style={{
+      position: 'absolute',
+      bottom: '2%',
+      left: '50%',
+      marginLeft: '-5vw'
+    }}
     className="scroll-indicator text-white text-3xl opacity-75"
   >
     <svg

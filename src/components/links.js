@@ -28,9 +28,6 @@ const Links = () => {
       <a className="text-blue my-4" href="https://odont.ku.dk/">
         Tandlægeskolen
       </a>
-      <a className="text-blue my-4" href="https://memeta.dk/">
-        Skriv under imod forringelsen af patienternes vilkår
-      </a>
     </div>
   )
 }
