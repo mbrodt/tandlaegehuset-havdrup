@@ -8,7 +8,7 @@
     "autoprefixer": "^9.3.1",
     "contentful": "^7.0.5",
     "dotenv": "^6.1.0",
-    "gatsby": "^2.0.50",
+    "gatsby": "^2.11.6",
     "gatsby-background-image": "^0.7.4",
     "gatsby-image": "^2.0.15",
     "gatsby-plugin-manifest": "^2.0.5",
