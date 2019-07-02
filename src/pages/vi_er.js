@@ -22,9 +22,14 @@ const AboutUs = ({
         <Header />
         <Section>
           <Sectionheading>Hvem er vi?</Sectionheading>
-          {edges.map(ele => {
-            return <Dentist info={ele.node} key={ele.node.titelOgNavn} />
-          })}
+          {edges
+            .sort((element, next) => {
+              return element.node.orderNumber > next.node.orderNumber ? 1 : -1
+            })
+            .map(ele => {
+              console.log('ELE', ele)
+              return <Dentist info={ele.node} key={ele.node.titelOgNavn} />
+            })}
         </Section>
       </Layout>
     </>
@@ -36,6 +41,7 @@ export const query = graphql`
     allContentfulMedarbejdere(sort: { fields: [createdAt] }) {
       edges {
         node {
+          orderNumber
           titelOgNavn
           billede {
             fixed(width: 160, height: 160, quality: 90) {

@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Tandlægehuset i Havdrup',
+        short_name: 'Tandlægehuset i Havdrup',
         start_url: '/',
         background_color: '#C4A060',
         theme_color: '#C4A060',

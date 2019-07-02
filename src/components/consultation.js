@@ -10,13 +10,16 @@ const Consultation = ({ vacations }) => {
       className="bg-white rounded-lg shadow-lg p-4 sm:p-8  mx-auto xl:mb-0"
     >
       <div className="flex justify-between items-center mb-6 ">
-        <p className="sm:w-2/3 text-grey text-md sm:text-lg md:text-xl font-bold text-left ml-0">
-          {/* sm:text-center */}
-          Lene Marquardsen & Sabine Lauge Olsen
-        </p>
-        <div>
+        <div className="w-2/3 text-grey text-md sm:text-lg md:text-2xl lg:text-lg font-bold text-left ml-0">
+          <p className="">
+            {/* sm:text-center */}
+            Lene Marquardsen &
+          </p>
+          <p>Sabine Lauge Olsen</p>
+        </div>
+        <div className="w-1/3">
           <img
-            className="mx-auto w-32"
+            className="mx-auto w-full max-w-2xs"
             src={Logo}
             alt="Tandlægehuset i Havdrup"
           />

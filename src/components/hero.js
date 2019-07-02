@@ -57,14 +57,15 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row justify-around max-w-md mx-auto">
           <Link
             to="/vi_er"
-            className="shadow-lg text-center no-underline w-full md:w-2/5 border-4 border-transparent bg-brown py-1 sm:py-2 md:py-3 lg:py-4 md:py-3 lg:px-8 md:text-xl lg:text-2xl text-white hover:bg-brown-dark text-md"
+            className="shadow-lg text-center no-underline 
+						w-3/5 mx-auto sm:w-full md:w-2/5 border-4 border-transparent bg-brown py-1 sm:py-2 md:py-3 lg:py-4 md:py-3 lg:px-8 md:text-xl lg:text-2xl text-white hover:bg-brown-dark text-md"
           >
             Se hvem vi er
           </Link>
           <AnchorLink
             offset="80"
             href="#contact"
-            className="shadow-lg text-center no-underline w-full md:w-2/5 border-4 border-brown py-1 sm:py-2 md:py-3 lg:py-4 md:py-3 lg:px-8 lg:px-8 md:text-xl lg:text-2xl  text-white hover:cursor-pointer hover:bg-brown text-md mt-2 md:mt-0"
+            className="shadow-lg text-center no-underline w-3/5 mx-auto sm:w-full md:w-2/5 border-4 border-brown py-1 sm:py-2 md:py-3 lg:py-4 md:py-3 lg:px-8 lg:px-8 md:text-xl lg:text-2xl  text-white hover:cursor-pointer hover:bg-brown text-md mt-2 md:mt-0"
           >
             Kontakt os
           </AnchorLink>
