@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => {
   if (typeof window !== `undefined`) {
     AOS.init()
   }
-  let vacations = data.allContentfulFerieDage.edges
+  let vacations = data.allContentfulFeriedage.edges
   let news = data.allContentfulNyhed.edges[0].node
   let galleryImages = data.allContentfulBilleder.edges[0].node.galleryImages
   return (
@@ -38,7 +38,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query ContentfulQuery {
-    allContentfulFerieDage(sort: { fields: [createdAt], order: DESC }) {
+    allContentfulFeriedage(sort: { fields: [createdAt], order: DESC }) {
       edges {
         node {
           ferieNavn
