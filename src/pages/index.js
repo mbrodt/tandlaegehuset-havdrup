@@ -1,24 +1,27 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from "react";
+import { graphql } from "gatsby";
 
-import Layout from '../components/layout'
-import Consultation from '../components/consultation'
-import News from '../components/news'
-import Hero from '../components/hero'
-import FramedImage from '../components/framedImage'
-import Links from '../components/links'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import Layout from "../components/layout";
+import Consultation from "../components/consultation";
+import News from "../components/news";
+import Hero from "../components/hero";
+import FramedImage from "../components/framedImage";
+import Links from "../components/links";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Overlay from "../components/overlay";
 
 const IndexPage = ({ data }) => {
+  const [showOverlay, setShowOverlay] = React.useState(true);
   if (typeof window !== `undefined`) {
-    AOS.init()
+    AOS.init();
   }
-  let vacations = data.allContentfulFeriedage.edges
-  let news = data.allContentfulNyhed.edges[0].node
-  let galleryImages = data.allContentfulBilleder.edges[0].node.galleryImages
+  let vacations = data.allContentfulFeriedage.edges;
+  let news = data.allContentfulNyhed.edges[0].node;
+  let galleryImages = data.allContentfulBilleder.edges[0].node.galleryImages;
   return (
     <>
+      {showOverlay && <Overlay setShowOverlay={setShowOverlay} />}
       <Hero />
       <Layout>
         <div className="">
@@ -33,8 +36,8 @@ const IndexPage = ({ data }) => {
         </div>
       </Layout>
     </>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query ContentfulQuery {
@@ -69,7 +72,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 // export const query = graphql`
 //   query VacationDaysQuery {
@@ -85,4 +88,4 @@ export const query = graphql`
 //   }
 // `
 
-export default IndexPage
+export default IndexPage;
