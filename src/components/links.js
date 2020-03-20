@@ -21,9 +21,9 @@ const Links = () => {
       </a>
       <a
         className="text-blue my-4"
-        href="http://www.xn--tandlgevagten-7fb.dk/index.php/9-slideshow/7-forside-2?gclid=Cj0KCQiAgf3gBRDtARIsABgdL3lZ-030388yUF3_V9b59NE6IKVOmY-g2lWGrAODHdsUr8BjhA_pTk0aAvezEALw_wcB"
+        href="https://www.regionsjaelland.dk/Sundhed/akut-hjaelp/tandpinevagten-og-giftlinjen/Sider/Om-Tandpinevagten.aspx?fbclid=IwAR2LjWmqfLjEVh8Sfkhl7IV7C5TCeauCfKzrbDKIk_td0gOlrAw4SOXF2l4"
       >
-        Tandlægevagten
+        Tandpinevagten
       </a>
       <a className="text-blue my-4" href="https://odont.ku.dk/">
         Tandlægeskolen
