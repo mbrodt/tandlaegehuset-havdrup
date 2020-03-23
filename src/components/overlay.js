@@ -8,63 +8,60 @@ function Overlay({ setShowOverlay }) {
     >
       <div class="max-w-xl px-6 overflow-auto">
         <h1 class="text-2xl">
-          Vi har stadig åbent – hvis det gør ondt eller du har store gener med
-          dine tænder
+          Vi holder åbent for dig, der skal have kritisk tandbehandling
         </h1>
         <div>
-          <p class="mt-4">Kære patient</p>
           <p class="mt-4">
-            <b>
-              Du kan fortsat få hjælp til tandpine og få færdiggjort kritiske
-              tandbehandlinger
-            </b>
-            , men Sundhedsstyrelsen har dog besluttet, at alle tandeftersyn og
-            tandrensninger udskydes. Du vil blive indkaldt til en ny tid til
-            tandeftersyn.
+            Klinikken kan i den kommende tid kun modtage og behandle patienter
+            på klinikken, der har et kritisk behandlingsbehov - og udelukkende
+            efter forudgående telefonisk aftale.
           </p>
           <p class="mt-4">
-            <b>
-              Hvis du er syg, har mistanke om at du er syg eller er i den
-              ”særlige risikogruppe” skal du ikke møde op på klinikken.
-            </b>{" "}
-            Det gælder fortsat, at hvis du er i kategorien ”særlig
-            risikogruppe”, bør du udskyde din tandlægetid – uanset om det er en
-            undersøgelse eller behandling. 
+            Baggrunden er nogle nye retningslinjer fra Sundhedsstyrelsen, som
+            beskriver, hvordan tandlæger skal håndtere COVID-19.
           </p>
           <p class="mt-4">
-            <b>
-              Lad os hjælpes af med at beskytte dig selv og andre i
-              venteværelset.
-            </b>{" "}
-            Vi har i forvejen meget fokus på hygiejne, bruger værnemidler og
-            følger de Nationale Infektionshygiejniske Retningslinjer for
-            Tandklinikker (NIR) fra Statens Serum Institut. Herudover har vi
-            taget følgende forholdsregler:
+            Sundhedsstyrelsen har bestemt, hvilke former for tandbehandling det
+            indbefatter. Det gælder fx behandling af skader i tænder og mund,
+            infektioner, rodbetændelse og svære tilfælde af caries og
+            parodontitis. Det gælder også skader på implantater, broer og
+            fyldninger samt igangværende bøjlebehandling.
+          </p>
+          <p class="mt-4">
+            Sundhedsstyrelsens retningslinjer gælder fra den 17. marts 2020 og
+            til og med juni 2020, medmindre Sundhedsstyrelsen melder andet ud.
+          </p>
+          <p class="mt-4">
+            <b>Vi kontakter dig</b>
+            <br></br>
+            Hvis du har en tid hos os i den kommende periode, vil vi kontakte
+            dig. Du er selvfølgelig også velkommen til at kontakte os.
+          </p>
+          <p class="mt-4">
+            <b>Hvis du har tid til kritisk tandbehandling</b>
+            <br></br>
+            Du skal ikke møde op i klinikken, selvom du har tid til kritisk
+            tandbehandling, hvis:
             <ul class="mt-2">
-              <li class="mt-2">Vi følger Sundhedsstyrelsens retningslinjer </li>
               <li class="mt-2">
-                Vi har sat ekstra håndsprit frem i venteværelset på klinikken,
-                som du bedes benytte
+                Du har symptomer, også bare lette, som fx snue, ondt i halsen
+                og/eller hoste
               </li>
               <li class="mt-2">
-                Vi har taget ekstra forholdsregler, så det er muligt at holde
-                afstand til de øvrige patienter, selvom der i forvejen sjældent
-                samles mere end 2-3 personer i vores venteværelse
+                Du har været i direkte kontakt med en bekræftet coronasmittet
+                person indenfor de sidste 14 dage.
               </li>
               <li class="mt-2">
-                Vi har fjernet aviser og blade fra venteværelset
+                Du er kommet hjem fra en rejse indenfor de sidste 14 dage.
               </li>
             </ul>
+            <br></br>
+            Så skal du i stedet ringe til din læge, som kan henvise dig videre i
+            sundhedssystemet.
           </p>
           <p class="mt-4">
-            <b> Her kan du finde mere information</b>
-            <br></br>
-            Du kan læse mere om Corona-virus, hvordan du skal forholde dig, hvis
-            du er udrejst fra et af de særlige risikoområder, samt finde ofte
-            stillede spørgsmål på hjemmesiden 
-            <a href="http://coronasmitte.dk" target="_blank">
-              coronasmitte.dk.
-            </a>
+            <b>Er du i tvivl?</b> <br></br>
+            Ring til klinikken.
           </p>
           <p class="mt-4">Klik hvor som helst for at komme ind på websitet</p>
         </div>
