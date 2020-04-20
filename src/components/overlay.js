@@ -5,7 +5,7 @@ function Overlay({ setShowOverlay }) {
   return (
     <div
       onClick={() => setShowOverlay(false)}
-      className="fixed h-screen w-screen bg-white z-10 opacity-95 top-0 left-0 flex flex-col"
+      className="fixed h-screen w-screen bg-white z-10 opacity-95 top-0 left-0 flex flex-col justify-center"
     >
       <div className="max-w-md mx-auto overflow-auto">
         <img className="w-full" src={Poster} alt="" />
