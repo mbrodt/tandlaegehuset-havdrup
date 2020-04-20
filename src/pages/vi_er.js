@@ -1,11 +1,11 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import Dentist from '../components/dentist'
-import Section from '../components/section'
-import Sectionheading from '../components/sectionheading'
-import Header from '../components/header'
-import AOS from 'aos'
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/layout";
+import Dentist from "../components/dentist";
+import Section from "../components/section";
+import Sectionheading from "../components/sectionheading";
+import Header from "../components/header";
+import AOS from "aos";
 
 const AboutUs = ({
   data: {
@@ -13,9 +13,9 @@ const AboutUs = ({
   }
 }) => {
   if (typeof window !== `undefined`) {
-    AOS.init()
+    AOS.init();
   }
-  console.log(edges)
+
   return (
     <>
       <Layout>
@@ -24,17 +24,16 @@ const AboutUs = ({
           <Sectionheading>Hvem er vi?</Sectionheading>
           {edges
             .sort((element, next) => {
-              return element.node.orderNumber > next.node.orderNumber ? 1 : -1
+              return element.node.orderNumber > next.node.orderNumber ? 1 : -1;
             })
             .map(ele => {
-              console.log('ELE', ele)
-              return <Dentist info={ele.node} key={ele.node.titelOgNavn} />
+              return <Dentist info={ele.node} key={ele.node.titelOgNavn} />;
             })}
         </Section>
       </Layout>
     </>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query MedarbejdereQuery {
@@ -55,6 +54,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default AboutUs
+export default AboutUs;
