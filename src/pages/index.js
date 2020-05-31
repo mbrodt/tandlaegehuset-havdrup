@@ -21,14 +21,14 @@ const IndexPage = ({ data }) => {
   let galleryImages = data.allContentfulBilleder.edges[0].node.galleryImages;
   return (
     <>
-      {showOverlay && <Overlay setShowOverlay={setShowOverlay} />}
+      {/* {showOverlay && <Overlay setShowOverlay={setShowOverlay} />} */}
       <Hero />
       <Layout>
         <div className="">
           <div id="contact" className="gallery-grid mt-12 lg:mt-20">
             <Consultation vacations={vacations} />
             <News newsData={news} />
-            {galleryImages.map(img => (
+            {galleryImages.map((img) => (
               <FramedImage key={img.file.url} img={img} />
             ))}
             <Links />
