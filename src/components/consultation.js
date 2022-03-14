@@ -27,6 +27,7 @@ const Consultation = ({ vacations }) => {
       </div>
       <div>
         <p className="text-grey leading-normal mb-8">
+        <a href="mailto:info@tandlaegehuset-havdrup.dk" class="block mb-4 text-grey no-underline">Email: info@tandlaegehuset-havdrup.dk</a>
           Vi tjekker naturligvis vores mail dagligt, men har du behov for en
           akut tid eller lignende, beder vi dig benytte telefonen.{' '}
         </p>
