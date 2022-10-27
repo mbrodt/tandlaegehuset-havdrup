@@ -12,7 +12,7 @@ const Links = () => {
       </p>
       <a
         className="text-blue my-4"
-        href="https://www.sundhed.dk/borger/guides/find-behandler/?orgId=29892"
+        href="https://www.sundhed.dk/borger/guides/find-behandler/?orgId=7989"
       >
         Priser
       </a>
