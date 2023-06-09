@@ -13,9 +13,9 @@ const Consultation = ({ vacations }) => {
         <div className="w-2/3 text-grey text-md sm:text-lg md:text-2xl lg:text-lg font-bold text-left ml-0">
           <p className="">
             {/* sm:text-center */}
-            Lene Marquardsen &
+            Sabine Lauge Olsen &
           </p>
-          <p>Sabine Lauge Olsen</p>
+          <p>Gry Kruuse</p>
         </div>
         <div className="w-1/3">
           <img
