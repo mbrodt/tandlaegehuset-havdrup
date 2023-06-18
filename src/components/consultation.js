@@ -45,7 +45,7 @@ const Consultation = ({ vacations }) => {
           </div>
           <div className="">
             <p className="uppercase text-sm text-grey leading-normal tracking-wide mb-2  ">
-              Alle hverdage
+              Man - Tors
             </p>
             <p className=" text-grey leading-normal font-bold text-xl ">
               07:30-12:15
